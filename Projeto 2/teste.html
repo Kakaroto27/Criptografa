@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="color-scheme" content="dark"> <!--muda tema-->
+    <link rel="stylesheet" href="icons8-moon-symbol-16.png"   id="colortema"   />
+    <link rel="stylesheet" href="./css/Ultproj2.css"><!-- carrega o css--> 
+
+    <title>teste</title>
+</head>
+<body>
+
+<br>
+<center>
+<main id="container">
+    
+
+    <h2>Criptografia</h2>
+<form id="caixa_form">
+    <select name="selection" id="select" class="select" onclick="seleciona()">
+        <option id="option" value="selecione" selected>Selecione uma opção</option>
+        <option value="base"  id="base" >Base64</option>
+        <option value="cifra" id="cifra">Cifra de César</option>
+    </select>
+    <br>
+
+    
+    <div class="botao_rango" id="botao">
+        <label class="chave" for="range"></label>
+        <input id="rango" type="range" value="10" min="1" max="25" oninput="this.nextElementSibling.value = this.value" />
+        <input type="number" id="rangenumber" value="10" min="1" max="25" oninput="rango.value=value" />
+    </div>
+
+
+    <form id="cifrador" >
+        <textarea id="texto" name="texto"></textarea></form>
+        
+        <form name="opcoes" method="dialog">
+        <label for="codificar"><input type="RADIO" name="OPCAO" value="codificar" id="codificar" > Codifica</label>
+        <label for="decodificar"><input type="RADIO" name="OPCAO" value="decodificar" id="decodificar"> Descodifica</label>
+        </form>
+    <br>
+        <button id="resultbtn">Cripto</button>
+        </form>
+
+
+<hr>
+<br>
+        <textarea name="resultado" id="resultado" placeholder="resultado">
+        </textarea>
+
+
+
+
+</main>
+</center>
+
+<div id="imgfundo"><img id="image" src="img/ogum.png" alt="Ogum"></a></div>
+</body>
+<script src="./js/proj2.js" defer></script><!-- carrega java-->
+</html>

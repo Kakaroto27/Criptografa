@@ -1,0 +1,147 @@
+:root { 
+    /*claro*/
+    --color-light-50: #f8fafc;
+
+    /*escuro*/
+    --color-dark-50: #797984;
+    --color-dark-100: #312d37;
+    --color-dark-900: #000;
+
+    --color-efeito-1: rgba(238, 14, 14, 0.849);
+    --color-terminal: #292b36;
+
+    --borde-redondo: 4px;
+
+}
+
+* {
+    font-family: 'Courier New',  monospace  ;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    overflow: hidden;
+}
+
+#container {
+    height: fit-content;
+    width: fit-content;
+    display: inline-block;      
+    align-items: center;    /*alinha horizt itens ao centro*/
+    justify-content: center;
+    justify-items: center;
+    flex-direction:column;
+    position:relative;
+    padding: 50px;
+    margin: 10px 20px;
+    background-color: var(--color-dark-100);
+    box-shadow: 20px 20px 50px 50px var(--color-efeito-1);
+    border-radius: var(--borde-redondo);
+    gap: 15px;
+    animation: dark-to-light-background 0,5s ease-in-out;
+}
+
+
+#caixa_form {
+    justify-items: center;
+    align-items:center;
+    flex-direction: column;
+    width: fit-content;
+    height: fit-content;
+    padding: 10px 20px;
+    border-radius: 8px;
+    gap: 30px; 
+}
+
+#select{
+    cursor: pointer;
+}
+
+.botao_rango, .rangenumber{
+    display: none;
+}
+.botao_rango{  
+    padding: 10px;
+    cursor: pointer;
+}
+
+.rangenumber {     
+    margin: 0;
+    border: 0;
+    outline: none;
+}
+
+#texto {
+    margin: 10px 20px 20px 10px;
+    padding: 5px;
+    margin: 10px 10px 10px 10px;
+    color: white;
+    border-top-left-radius: var(--borde-redondo);
+    border-top-right-radius: var(--borde-redondo);
+}
+
+input[type='range']::-webkit-slider-thumb {
+    cursor: pointer;   
+    background:white;
+    border-radius: 50%;
+    height:10px;
+    width:10px;
+}
+
+#codificar{
+    cursor: pointer;
+}
+
+#decodificar{
+    cursor: pointer;
+}
+
+
+#resultbtn {
+    border: none;
+    justify-content: center;
+    align-items: center;
+    background-color: red;
+    padding: 7px;
+    margin: 5px;
+    border-radius: 3px;
+    color: var(--color-light-50);
+    font-weight: bold;
+    cursor: pointer;
+}
+
+
+#resultbtn.claro {
+    background-color: blue;
+}
+
+#resultbtn :hover {
+    transform: scale(1.05);
+}
+
+#resultado {
+    display: flex;
+    width: -webkit-fill-available;
+    flex-direction: inline-flex;
+    height: fit-content;
+    color: #e4e4f1;
+    margin: 0;
+    padding: 10px 10px;
+    background-color: transparent;
+    border-color: transparent;
+    border-radius: 8px;
+    gap: 30px; 
+    border-bottom-left-radius: var(--borde-redondo);
+    border-bottom-right-radius: var(--borde-redondo);
+}
+
+#image {
+    width: 200px;
+    height: 300px;
+    border: 10cm transparent;
+
+
+}
+
